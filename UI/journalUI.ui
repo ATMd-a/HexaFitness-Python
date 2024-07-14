@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>678</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(233, 231, 249);</string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tw Cen MT</family>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>My Fitness Journal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelStatus">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>611</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(196, 194, 209);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(214, 213, 229);
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>50</y>
+     <width>301</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget_2 {
+	
+	background-color: rgb(255, 255, 255);
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(22, 17, 58);
+
+}</string>
+   </property>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>197</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Exercise (MET)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leExDur">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>214</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>197</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Duration</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>220</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>mins</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>My Exercise</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addExButton">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>310</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 0px solid #8f8f91;
+    border-radius: 15px;
+    background-color: rgb(15, 211, 84);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid  #8f8f91;
+    background-color: rgb(14, 197, 78);
+}
+
+QPushButton:pressed {
+    border: 1px solid #4a4a4a;
+    background-color: rgb(12, 167, 66);
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leExBurn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>266</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>250</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Burned Calories</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label {
+	background-color: rgba(246,246,246,255);
+	
+	border: 2px solid rgb(22, 17, 58);
+	border-radius:  10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Formula</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>115</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>(MET x weight in Kg x 3.5) ÷ 200</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Calories burned per minute =</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calcuButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>266</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 0px solid #8f8f91;
+    border-radius: 15px;
+    background-color: rgb(15, 211, 84);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid  #8f8f91;
+    background-color: rgb(14, 197, 78);
+}
+
+QPushButton:pressed {
+    border: 1px solid #4a4a4a;
+    background-color: rgb(12, 167, 66);
+}</string>
+    </property>
+    <property name="text">
+     <string>Calculate</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboExName">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>214</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 7px;
+    background-color: transparent;
+    font-size: 13px;
+    color: rgb(22, 17, 58);
+}
+
+QComboBox::drop-down {
+    border: none; 
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(233, 231, 249);
+}
+
+QComboBox:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(214, 213, 229);
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string> - Exercise -</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Jogging</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jumping Rope</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cycling</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Walking</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Running</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yoga</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dancing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Basketball</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Volleyball</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Boxing</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>220</y>
+      <width>19</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	image: url(:/rrr/down-arrow.png);
+	
+	background: transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>143</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Total Calories burned per min =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>158</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Calories burned per min * duration</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>90</y>
+     <width>60</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>180</y>
+     <width>60</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>270</y>
+     <width>60</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>350</y>
+     <width>60</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>50</y>
+     <width>301</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget {
+	
+	background-color: rgb(255, 255, 255);
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(22, 17, 58);
+
+}</string>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Search Code</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>136</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Meal Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>84</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboAMCode">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>108</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 7px;
+    background-color: transparent;
+    color: rgb(22, 17, 58);
+}
+
+QComboBox::drop-down {
+    border: none; 
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(233, 231, 249);
+}
+
+QComboBox:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(214, 213, 229);
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>- Meal Code -</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leAMName">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>153</y>
+      <width>108</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>191</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Nutritional Facts per serving</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Calories:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>244</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Proteins:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Carbohydrates:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cboAMTime">
+    <property name="geometry">
+     <rect>
+      <x>153</x>
+      <y>100</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 7px;
+    background-color: transparent;
+    font-size: 13px;
+    color: rgb(22, 17, 58);
+}
+
+QComboBox::drop-down {
+    border: none; 
+}
+
+QComboBox:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(233, 231, 249);
+}
+
+QComboBox:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(214, 213, 229);
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>  - Time -</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Breakfast</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lunch</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dinner</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Snack</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="leANCal">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>218</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leANPro">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>242</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leANCarb">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>267</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>220</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>kcal.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>244</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>grams</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>270</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>grams</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addAMButton">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>308</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 0px solid #8f8f91;
+    border-radius: 15px;
+    background-color: rgb(15, 211, 84);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid  #8f8f91;
+    background-color: rgb(14, 197, 78);
+}
+
+QPushButton:pressed {
+    border: 1px solid #4a4a4a;
+    background-color: rgb(12, 167, 66);
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>106</y>
+      <width>19</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	image: url(:/rrr/down-arrow.png);
+	
+	background: transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>106</y>
+      <width>19</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	image: url(:/rrr/down-arrow.png);
+	
+	background: transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>My Meals</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leAMServ">
+    <property name="geometry">
+     <rect>
+      <x>153</x>
+      <y>153</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>136</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string># of Serving</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label_5</zorder>
+  <zorder>labelStatus</zorder>
+  <zorder>backButton</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>line_4</zorder>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

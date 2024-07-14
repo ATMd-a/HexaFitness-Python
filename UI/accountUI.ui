@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog {
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>601</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget {
+	
+	background-color: rgb(255, 255, 255);
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(22, 17, 58);
+
+}</string>
+   </property>
+   <widget class="QLineEdit" name="leUName">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>491</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>80</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lePass">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>301</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>220</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Weight</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leUWeight">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>301</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editPass">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>170</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 15px;
+    background-color: rgb(251, 211, 60);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(226, 189, 54);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color:rgb(153, 128, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editWeight">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 15px;
+    background-color: rgb(251, 211, 60);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(226, 189, 54);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color:rgb(153, 128, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delAccountB">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>320</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 15px;
+    background-color: rgb(234, 84, 93);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(203, 73, 82);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(143, 52, 58);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete Account</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Account Information</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logoutButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 15px;
+    background-color: rgb(0, 209, 255);
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(0, 173, 208);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(0, 87, 104);
+}</string>
+    </property>
+    <property name="text">
+     <string>Log Out</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="backEButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 1px solid rgb(22, 17, 58);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 13px;
+	color: rgb(22, 17, 58);
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(233, 231, 249);
+}
+
+QPushButton:pressed {
+    border: 1px solid rgb(22, 17, 58);
+    background-color: rgb(214, 213, 229);
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tw Cen MT</family>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>My Account</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
